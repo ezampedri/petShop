@@ -1,0 +1,129 @@
+/* Configuración general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #e6f2ff; /* Azul claro */
+    color: #003366; /* Azul oscuro */
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366; /* Azul oscuro */
+    color: #fff;
+    padding: 15px 20px;
+}
+
+.header .logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.header .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.header .search-bar input {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+}
+
+.header .search-bar button {
+    background-color: #00509e;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.header .contact {
+    text-align: right;
+}
+
+/* Categorías */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00509e;
+    padding: 10px 0;
+}
+
+.category {
+    text-align: center;
+    color: #fff;
+}
+
+.category img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    object-fit: cover;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Carrusel */
+.carousel {
+    position: relative;
+    background-color: #cce7ff;
+    padding: 20px;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 80%;
+    height: auto;
+}
+
+.carousel-controls button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #00509e;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-controls .prev {
+    left: 10px;
+}
+
+.carousel-controls .next {
+    right: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .header, .categories {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carousel-item img {
+        width: 100%;
+    }
+}
