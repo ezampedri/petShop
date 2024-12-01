@@ -1,4 +1,3 @@
-/* Configuración general */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -47,11 +46,11 @@ body {
 /* Categorías */
 .categories {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around; /* Espacio uniforme entre categorías */
     align-items: center;
-    background-color: #00509e; 
+    background-color: #00509e; /* Azul */
     padding: 10px 0;
-    gap: 20px; 
+    gap: 20px; /* Espacio adicional entre bloques */
     
 }
 
@@ -59,17 +58,17 @@ body {
     text-align: center;
     color: #fff;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column; /* Ordena los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
 }
 
 .category img {
-    width: 80px; 
+    width: 80px; /* Tamaño ajustado de la imagen */
     height: 80px;
-    border-radius: 50%; 
-    margin-bottom: 10px; 
-    object-fit: cover; 
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 50%; /* Hace las imágenes redondas */
+    margin-bottom: 10px; /* Espacio entre la imagen y el botón */
+    object-fit: cover; /* Asegura que las imágenes se vean bien dentro del contenedor */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); /* Sombras para resaltar */
 }
 
 /* Carrusel */
@@ -157,12 +156,8 @@ body {
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
-  text-decoration: none; 
-  /* preguntarle a edu como sacar la letra azul y el subrayado de abajo */
   
 }
-
-
 .animales:hover {
     box-shadow: inset 0 100px 0 0 #D80286;
 }

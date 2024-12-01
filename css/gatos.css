@@ -1,0 +1,306 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #e6f2ff; /* Azul claro */
+    color: #49225B; /* Azul oscuro */
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #49225B; /* Azul oscuro */
+    color: #fff;
+    padding: 15px 20px;
+    
+}
+
+.header .logo .toya {
+    display: inline-block;
+    font-family: "Chango", serif;
+    position: relative;
+    top: -10px;
+    
+}
+.header .logo .lugar {
+    display: inline-block;
+    position: relative;
+    left: 50px;
+    bottom: 20px;
+    font-family: "Chango", serif;   
+}
+.dogsandcats {
+    display: inline-block;
+    position: relative;
+    left: 120px;
+    top: 20px;
+}
+.dogsandcats img {
+    height: 120px;
+    width: 150px;
+    border-radius: 25px;
+    border: #333;
+    
+}
+
+.header .search-bar {
+    margin-left: 80px;
+    align-items: center;
+}
+
+
+.header .search-bar input {
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    vertical-align: top;
+    margin-top: -5px;
+    width: 250px;
+}
+
+.header .search-bar button {
+    
+    padding: 0 0 0 0;
+    cursor: pointer;
+    
+}
+.lupa {
+    display: inline-block;
+    margin-top: -8px;
+    position: relative;
+    right: 6px;
+    bottom: -4px;
+   
+}
+.lupa img {
+    width: 20px;
+    height: 33px;
+    background: none;
+    padding: 0;
+    /* revisar con edu */
+ } 
+
+.header .carrito {
+    text-align: center;
+    position: relative;
+    right: 30px;
+}
+.carrito img {
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+    cursor: pointer;
+    
+}
+
+/* Categorías */
+.categories {
+    display: flex;
+    justify-content: space-around; /* Espacio uniforme entre categorías */
+    align-items: center;
+    background-color: #6e3282;
+    
+    padding: 10px 0;
+    gap: 20px; /* Espacio adicional entre bloques */
+    
+}
+
+.category {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Ordena los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); 
+    width: 13%;
+    margin: 0 auto;
+    background-color: #49225B;
+    
+    border-radius: 20px;
+}
+.category p {
+    margin-top: 10px;
+    margin-bottom: 10px; /* Ajusta los márgenes para que quede centrado */
+    width: 40%;
+   }
+   
+.animales {
+    color: #FFF;
+  border: 2px solid rgb(216, 2, 134);
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #D80286;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  
+}
+.animales:hover {
+    box-shadow: inset 0 100px 0 0 #D80286;
+}
+
+.category img {
+    width: 100px; /* Tamaño ajustado de la imagen */
+    height: 100px;
+    border-radius: 50%; 
+    margin-bottom: 10px; /* Espacio entre la imagen y el botón */
+    object-fit: cover; /* Asegura que las imágenes se vean bien dentro del contenedor */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); /* Sombras para resaltar */
+}
+
+/* Carrusel */
+.carousel {
+    position: relative;
+    background-color: #cce7ff;
+    padding: 20px;
+    background-image: url(/img/fondosec.png);
+    object-fit: cover;
+}
+
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 80%;
+    height: auto;
+}
+
+.carousel-controls button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #00509e;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-controls .prev {
+    left: 10px;
+}
+
+.carousel-controls .next {
+    right: 10px;
+}
+/* contenido */
+.content {
+    background-image: url(img/TOYA\ PETSHOP.jpeg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.destacados {
+    text-align: center;
+}
+.producto {
+    margin: 20px 20px 20px 20px;
+    width: 200px;
+    
+    background-color: #49225B;
+    border-radius: 25px;
+    display: inline-block;
+    position: relative;
+    left: 2%;
+    color: white ;
+}
+.producto h3 {
+    text-align: center;
+}
+.producto p {
+    text-align: center;
+}
+.producto img{
+    width: 200px;
+    object-fit: cover;
+    height: auto;
+    border: black;
+}
+.botones{
+    margin-left: 26px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #6e3282;
+    height: 30px;
+    width: 150px;
+    color: white;
+}
+.botones img {
+    height: 13px;
+    width: 15px;
+   
+}
+
+
+.nombresprod {
+    background-color: #6e3282;
+    border-radius: 25px;
+    width: 180px;
+    margin-left: 10px;
+    height: 30px;
+    padding-top: 10px;
+    margin-top: -10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #a56abd;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    gap: 20px;
+}
+.footer .legal {
+    margin-left: 20px;
+    margin-top: 3px;
+    
+}
+.footer .contacto {
+    margin-left: 20px;
+}
+.direccion img {
+    height: 20px;
+    width: 20px;
+}
+
+
+   
+
+/* fuente externa */
+/* @font-face {
+    font-family:  'chango' ;
+    src: url(/Chango\,Lora/Chango);
+    hacer con el edu
+} */
+/* Responsividad */
+@media (max-width: 768px) {
+    .header, .categories {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carousel-item img {
+        width: 100%;
+    }
+}
